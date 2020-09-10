@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Databases</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2>Recipes</h2>
+        <ul>
+
+        </ul>
+        <form>
+            <label for="recipe">Add new recipe</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" value="add" class="btn btn-outline-secondary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDNwf_B5uhMowKauTudo2DMRpPJdsZdPTE",
+            authDomain: "modern-javascript-9f764.firebaseapp.com",
+            databaseURL: "https://modern-javascript-9f764.firebaseio.com",
+            projectId: "modern-javascript-9f764",
+            storageBucket: "modern-javascript-9f764.appspot.com",
+            messagingSenderId: "646483939649",
+            appId: "1:646483939649:web:021c1010d02654924891c0",
+            measurementId: "G-6BMDH843TW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="sandbox.js"></script>
+</body>
+
+</html>
