@@ -11,3 +11,5 @@ console.log(testUsers);
 
 const premUsers = getPremUsers(users);
 console.log(premUsers);
+
+console.log('test 3')
